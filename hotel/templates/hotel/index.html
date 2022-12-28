@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nearby Hotels</title>
+    </head>
+
+    from {{user_location}}
+<body>
+    <h1>Nearby Hotels</h1>
+    {% if hotels %}
+    <ul>
+    {% for hotel in hotels %}
+        <li>
+        {{ hotel.name }}: {{hotel.distance}}
+        </li>
+    {% endfor %}
+    </ul>
+    {% else%}
+    no hotels
+    {% endif %}
+</body>
+</html>
