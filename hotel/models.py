@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.gis.geos import Point
+
 
 # Create your models here.
 from django.contrib.gis.db import models

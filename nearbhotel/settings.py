@@ -82,6 +82,14 @@ WSGI_APPLICATION = 'nearbhotel.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.contrib.gis.db.backends.spatialite",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
@@ -93,6 +101,21 @@ DATABASES = {
     }
 }
 
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.contrib.gis.db.backends.mysql',
+#         'NAME': 'nearby_hotel',
+#         'USER':'root',
+#         'PASSWORD':'mysql0393',
+#         'HOST':'localhost',
+#         'PORT':'3306',
+#               'OPTIONS': {  
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+#         }  
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
